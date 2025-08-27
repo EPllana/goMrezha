@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Hero: React.FC = () => {
@@ -17,17 +16,17 @@ const Hero: React.FC = () => {
       </video>
 
       <div className="relative z-20 container mx-auto px-6">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4 animate-fade-in-down">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4 animate-fade-in-down animation-delay-200">
           We Design Digital Experiences
           <br />
           That <span className="text-indigo-400">Inspire</span>
         </h1>
-        <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8 animate-fade-in-up animation-delay-300">
+        <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8 animate-fade-in-up animation-delay-500">
           goMrezha is a creative agency that blends strategy, design, and technology to build beautiful and impactful digital products for brands that dare to be different.
         </p>
         <a 
           href="#work"
-          className="inline-block bg-indigo-600 text-white font-bold text-lg py-4 px-10 rounded-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105 animate-fade-in-up animation-delay-600"
+          className="inline-block bg-indigo-600 text-white font-bold text-lg py-4 px-10 rounded-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105 animate-fade-in-up animation-delay-800"
         >
           View Our Work
         </a>
@@ -43,8 +42,9 @@ const Hero: React.FC = () => {
         }
         .animate-fade-in-down { animation: fade-in-down 0.8s ease-out forwards; }
         .animate-fade-in-up { animation: fade-in-up 0.8s ease-out forwards; }
-        .animation-delay-300 { animation-delay: 0.3s; }
-        .animation-delay-600 { animation-delay: 0.6s; }
+        .animation-delay-200 { animation-delay: 0.2s; }
+        .animation-delay-500 { animation-delay: 0.5s; }
+        .animation-delay-800 { animation-delay: 0.8s; }
       `}</style>
     </section>
   );

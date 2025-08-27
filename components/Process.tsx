@@ -15,9 +15,9 @@ const Process: React.FC = () => {
           {/* Timeline line */}
           <div className="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-gray-700 hidden md:block" aria-hidden="true"></div>
 
-          <div className="flex flex-col md:grid md:grid-cols-2 gap-y-12 md:gap-x-16">
+          <ol className="flex flex-col md:grid md:grid-cols-2 gap-y-12 md:gap-x-16">
             {PROCESS_STEPS.map((step, index) => (
-              <div key={step.id} className={`flex items-start gap-6 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
+              <li key={step.id} className={`flex items-start gap-6 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
                 <div className="relative">
                   <div className="hidden md:flex items-center justify-center w-12 h-12 bg-gray-800 border-2 border-indigo-500 rounded-full text-indigo-400 font-bold text-xl">
                     {step.id}
@@ -30,9 +30,9 @@ const Process: React.FC = () => {
                   <h3 className="text-2xl font-semibold text-white mb-2">{step.title}</h3>
                   <p className="text-gray-400">{step.description}</p>
                 </div>
-              </div>
+              </li>
             ))}
-          </div>
+          </ol>
         </div>
       </div>
     </section>

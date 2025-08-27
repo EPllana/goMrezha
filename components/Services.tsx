@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { SERVICES } from '../constants';
 
@@ -13,7 +12,7 @@ const Services: React.FC = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {SERVICES.map((service, index) => (
-            <div 
+            <article 
               key={index} 
               className="bg-gray-800 p-8 rounded-lg border border-gray-700 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out shadow-lg hover:shadow-indigo-500/20"
             >
@@ -22,7 +21,7 @@ const Services: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">{service.title}</h3>
               <p className="text-gray-400">{service.description}</p>
-            </div>
+            </article>
           ))}
         </div>
       </div>

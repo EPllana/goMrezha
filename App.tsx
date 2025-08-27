@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -8,6 +7,7 @@ import Process from './components/Process';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 const App: React.FC = () => {
   return (
@@ -22,6 +22,7 @@ const App: React.FC = () => {
         <Contact />
       </main>
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 };

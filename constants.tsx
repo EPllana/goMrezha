@@ -1,4 +1,3 @@
-
 import React from 'react';
 import type { Service, Project, ProcessStep, Testimonial } from './types';
 
@@ -50,42 +49,42 @@ export const SERVICES: Service[] = [
 export const PROJECTS: Project[] = [
   {
     id: 1,
-    imageUrl: 'https://picsum.photos/seed/project1/800/600',
+    imageUrl: 'https://picsum.photos/seed/project1/800/900.webp',
     category: 'E-commerce',
     title: 'Nova Retail',
     description: 'A futuristic e-commerce platform with a focus on seamless user journey and immersive product discovery.'
   },
   {
     id: 2,
-    imageUrl: 'https://picsum.photos/seed/project2/800/600',
+    imageUrl: 'https://picsum.photos/seed/project2/800/600.webp',
     category: 'Corporate Website',
     title: 'Quantum Solutions',
     description: 'A sleek and professional corporate site for a leading tech firm, showcasing their innovations and services.'
   },
   {
     id: 3,
-    imageUrl: 'https://picsum.photos/seed/project3/800/600',
+    imageUrl: 'https://picsum.photos/seed/project3/800/1000.webp',
     category: 'Mobile App',
     title: 'Zenith Health',
     description: 'A health and wellness app with a calming UI, personalized plans, and progress tracking features.'
   },
   {
     id: 4,
-    imageUrl: 'https://picsum.photos/seed/project4/800/600',
+    imageUrl: 'https://picsum.photos/seed/project4/800/700.webp',
     category: 'SaaS Platform',
     title: 'ConnectSphere',
     description: 'An intuitive dashboard for a SaaS product, designed for clarity, efficiency, and data visualization.'
   },
   {
     id: 5,
-    imageUrl: 'https://picsum.photos/seed/project5/800/600',
+    imageUrl: 'https://picsum.photos/seed/project5/800/500.webp',
     category: 'Branding',
     title: 'Artisan Coffee Co.',
     description: 'A complete brand identity for a new coffee shop, including logo, packaging, and digital presence.'
   },
   {
     id: 6,
-    imageUrl: 'https://picsum.photos/seed/project6/800/600',
+    imageUrl: 'https://picsum.photos/seed/project6/800/800.webp',
     category: 'Web Application',
     title: 'TravelScape AI',
     description: 'An AI-powered travel planning application that provides personalized itineraries and booking.'
@@ -120,18 +119,24 @@ export const TESTIMONIALS: Testimonial[] = [
     quote: "goMrezha transformed our vision into a stunning reality. Their attention to detail and creative prowess are second to none. Our user engagement has skyrocketed since the launch!",
     author: 'Sarah Johnson',
     company: 'CEO of Nova Retail',
-    imageUrl: 'https://picsum.photos/seed/person1/100/100'
+    imageUrl: 'https://picsum.photos/seed/person1/100/100.webp'
   },
   {
     quote: "Working with the goMrezha team was a dream. They are true professionals who are passionate about what they do. The final product exceeded all our expectations.",
     author: 'Michael Chen',
     company: 'Founder of ConnectSphere',
-    imageUrl: 'https://picsum.photos/seed/person2/100/100'
+    imageUrl: 'https://picsum.photos/seed/person2/100/100.webp'
   },
   {
     quote: "Their process is transparent and collaborative. They kept us in the loop at every stage and delivered a website that perfectly captures our brand identity. Highly recommended!",
     author: 'Emily Rodriguez',
     company: 'Marketing Director, Quantum Solutions',
-    imageUrl: 'https://picsum.photos/seed/person3/100/100'
+    imageUrl: 'https://picsum.photos/seed/person3/100/100.webp'
+  },
+  {
+    quote: "The depth of creativity and technical skill at goMrezha is simply unparalleled. They delivered a product that was not only beautiful but also functionally flawless. We saw an immediate uptick in conversions.",
+    author: 'Jessica Williams',
+    company: 'Founder of Zenith Health',
+    imageUrl: 'https://picsum.photos/seed/person4/100/100.webp'
   }
 ];

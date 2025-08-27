@@ -1,4 +1,3 @@
-
 import React, { useState, useCallback } from 'react';
 import { generateWebsiteIdea } from '../services/geminiService';
 import type { GeneratedIdea } from '../types';
@@ -29,7 +28,7 @@ const IdeaGenerator: React.FC = () => {
     }, [businessType]);
 
     return (
-        <div className="bg-gray-800 p-8 rounded-lg border border-gray-700">
+        <section className="bg-gray-800 p-8 rounded-lg border border-gray-700">
             <h3 className="text-2xl font-bold text-white mb-1">Need Inspiration?</h3>
             <p className="text-gray-400 mb-6">Use our AI Idea Generator to spark your next big thing.</p>
             <div className="flex flex-col sm:flex-row gap-4 mb-4">
@@ -38,7 +37,7 @@ const IdeaGenerator: React.FC = () => {
                     value={businessType}
                     onChange={(e) => setBusinessType(e.target.value)}
                     placeholder="e.g., Artisan Bakery, Tech Startup"
-                    className="flex-grow bg-gray-900 border border-gray-600 text-white rounded-md px-4 py-3 focus:ring-2 focus:ring-indigo-500 focus:outline-none transition"
+                    className="flex-grow bg-gray-900 border border-gray-600 text-white rounded-md px-4 py-3 focus:ring-2 focus:ring-indigo-500 focus:outline-none transition disabled:opacity-50 disabled:cursor-not-allowed"
                     disabled={isLoading}
                 />
                 <button
@@ -64,16 +63,32 @@ const IdeaGenerator: React.FC = () => {
                 </div>
             )}
             <style>{`.animate-fade-in { animation: fadeIn 0.5s ease-in-out; } @keyframes fadeIn { 0% { opacity: 0; transform: translateY(10px); } 100% { opacity: 1; transform: translateY(0); }}`}</style>
-        </div>
+        </section>
     );
 };
 
 
 const ContactForm: React.FC = () => {
     return (
-        <div className="bg-gray-800 p-8 rounded-lg border border-gray-700 h-full">
+        <section className="bg-gray-800 p-8 rounded-lg border border-gray-700 h-full">
             <h3 className="text-2xl font-bold text-white mb-1">Let's Build Together</h3>
-            <p className="text-gray-400 mb-6">Fill out the form and we'll be in touch shortly.</p>
+            <p className="text-gray-400 mb-6">Fill out the form or contact us directly.</p>
+
+            <div className="mb-8 space-y-4">
+                 <a href="mailto:info.gomrezha@gmail.com" className="flex items-center text-gray-300 hover:text-indigo-400 transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-400 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <span>info.gomrezha@gmail.com</span>
+                </a>
+                <a href="tel:+38344595003" className="flex items-center text-gray-300 hover:text-indigo-400 transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-400 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    <span>+383 44 595 003</span>
+                </a>
+            </div>
+
             <form>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                     <input type="text" placeholder="Your Name" className="bg-gray-900 border border-gray-600 text-white rounded-md px-4 py-3 focus:ring-2 focus:ring-indigo-500 focus:outline-none transition" />
@@ -89,7 +104,7 @@ const ContactForm: React.FC = () => {
                     Send Message
                 </button>
             </form>
-        </div>
+        </section>
     );
 }
 
